@@ -1,1 +1,40 @@
-{     "devDependencies": {         "express-request-proxy": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-express-request-proxy",     "homepage": "https://github.com/npmtest/node-npmtest-express-request-proxy",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-express-request-proxy.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [express-request-proxy (v2.0.0)](https://github.com/4front/express-request-proxy)  [![npm package](https://img.shields.io/npm/v/npmtest-express-request-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-request-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-request-proxy.svg)](https://travis-ci.org/npmtest/node-npmtest-express-request-proxy)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "express-request-proxy": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-express-request-proxy",
+    "keywords": [
+        "coverage",
+        "test",
+        "express-request-proxy"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_express_request_proxy.js",
+    "name": "npmtest-express-request-proxy",
+    "nameAlias": "npmtest_express_request_proxy",
+    "nameOriginal": "npmtest-express-request-proxy",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-express-request-proxy.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
