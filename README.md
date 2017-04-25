@@ -1,6 +1,6 @@
 # npmtest-express-request-proxy
 
-#### test coverage for  [express-request-proxy (v2.0.0)](https://github.com/4front/express-request-proxy)  [![npm package](https://img.shields.io/npm/v/npmtest-express-request-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-request-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-request-proxy.svg)](https://travis-ci.org/npmtest/node-npmtest-express-request-proxy)
+#### basic test coverage for  [express-request-proxy (v2.0.0)](https://github.com/4front/express-request-proxy)  [![npm package](https://img.shields.io/npm/v/npmtest-express-request-proxy.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-express-request-proxy) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-express-request-proxy.svg)](https://travis-ci.org/npmtest/node-npmtest-express-request-proxy)
 
 #### Intelligent http proxy Express middleware
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-express-request-proxy/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-express-request-proxy/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-express-request-proxy/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-express-request-proxy/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-request-proxy/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-request-proxy/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-express-request-proxy/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-express-request-proxy/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-express-request-proxy/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-express-request-proxy/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-express-request-proxy/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-express-request-proxy/build/coverage.html/index.html)
 
@@ -104,7 +104,8 @@
         "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/",
         "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/"
     },
-    "version": "2.0.0"
+    "version": "2.0.0",
+    "bin": {}
 }
 ```
 
